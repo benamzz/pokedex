@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { ClipLoader } from 'react-spinners';
 import '../styles/pokedex.css'
 
 
@@ -46,7 +47,9 @@ const PokemonList = () => {
                 <button onClick={() => handleSelectGeneration(null)}>All Generations</button>
             </div>
             {isLoading ? (
-                <p>Loading...</p>
+                <div className="loader">
+                    <ClipLoader color="#ffffff" size={50} />
+                </div>
             ) : (
                 <div className="pokemon-list">
                     {filteredPokemonData.map((pokemon) => (
