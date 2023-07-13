@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function SearchForm() {
+const SearchForm = () => {
     const [city, setCity] = useState('');
     const [weatherData, setWeatherData] = useState(null);
     const [error, setError] = useState(null);

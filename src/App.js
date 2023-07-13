@@ -1,15 +1,9 @@
-import React from 'react';
-import SearchForm from './components/Form';
-import WeatherDisplay from './components/WeatherDisplay';
+import Routeur from './router/Router';
 
-function App() {
-  return (
-    <div>
-      <h1>Weather App</h1>
-      <SearchForm />
-      <WeatherDisplay />
-    </div>
-  );
+/**
+ * The function exports a component called "App" that returns a "Routeur" component.
+ * @returns A component called "Routeur" is being returned.
+ */
+export default function App() {
+  return <Routeur />;
 }
-
-export default App;

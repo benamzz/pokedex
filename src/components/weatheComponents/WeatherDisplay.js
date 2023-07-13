@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WeatherDisplay({ weatherData }) {
+const WeatherDisplay = ({ weatherData }) => {
   if (!weatherData) {
     return null;
   }

@@ -1,0 +1,23 @@
+body {
+    background-color: rgba(0, 0, 0, 0.762);
+    color: white;
+    min-height: 100vh;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-link {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navigation-link:hover {
+    color: rgb(255, 238, 45);
+}
